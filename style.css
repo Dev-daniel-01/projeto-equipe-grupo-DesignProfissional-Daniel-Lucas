@@ -1,0 +1,262 @@
+/* ============================================================
+   RADAR ESTÁGIO — base compartilhada
+   Este trecho até a linha "FIM DA BASE" fica na main.
+   Cada integrante escreve APENAS dentro do seu bloco lá embaixo.
+   ============================================================ */
+
+:root {
+  --tinta:    #16233d;
+  --papel:    #fbfbfc;
+  --papel-2:  #eef1f5;
+  --grafite:  #5a6478;
+  --borda:    #dbe0e8;
+  --sinal:    #0e7c4f;   /* verde de "vaga aberta" — carrega status, não é enfeite */
+
+  --fonte-titulo: "Bricolage Grotesque", system-ui, sans-serif;
+  --fonte-texto:  "Public Sans", system-ui, sans-serif;
+
+  --largura: 62rem;
+  --gutter: 1.5rem;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--papel);
+  color: var(--tinta);
+  font-family: var(--fonte-texto);
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+  font-family: var(--fonte-titulo);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin: 0 0 0.6em;
+}
+
+h1 { font-size: clamp(2.4rem, 6vw, 4rem); }
+h2 { font-size: clamp(1.7rem, 3.4vw, 2.4rem); }
+h3 { font-size: 1.15rem; }
+
+p { max-width: 68ch; }
+
+a { color: var(--tinta); }
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--sinal);
+  outline-offset: 3px;
+}
+
+/* --- topo ---------------------------------------------------- */
+
+.topo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  max-width: var(--largura);
+  margin: 0 auto;
+  padding: 1.5rem var(--gutter);
+}
+
+.marca {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-family: var(--fonte-titulo);
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+.marca__ping {
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  background: var(--sinal);
+  box-shadow: 0 0 0 0.28rem rgba(14, 124, 79, 0.16);
+}
+
+.nav {
+  display: flex;
+  gap: 1.4rem;
+  font-size: 0.95rem;
+}
+
+.nav a {
+  color: var(--grafite);
+  text-decoration: none;
+  padding-bottom: 0.15rem;
+  border-bottom: 1px solid transparent;
+}
+
+.nav a:hover { color: var(--tinta); border-bottom-color: var(--tinta); }
+
+/* --- seções -------------------------------------------------- */
+
+.secao {
+  max-width: var(--largura);
+  margin: 0 auto;
+  padding: 4rem var(--gutter);
+}
+
+.secao + .secao { border-top: 1px solid var(--borda); }
+
+/* --- rodapé -------------------------------------------------- */
+
+.rodape {
+  max-width: var(--largura);
+  margin: 0 auto;
+  padding: 2.5rem var(--gutter) 3.5rem;
+  border-top: 1px solid var(--borda);
+  color: var(--grafite);
+  font-size: 0.9rem;
+}
+
+.rodape p { margin: 0; }
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}
+
+/* ===================== FIM DA BASE ========================== */
+
+
+/* ------------------------------------------------------------
+   BLOCO 1 · HERO — branch feat/hero — Daniel
+   ------------------------------------------------------------ */
+
+.secao--hero {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.etiqueta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--grafite);
+  background: var(--papel-2);
+  border: 1px solid var(--borda);
+  border-radius: 999px;
+  padding: 0.4rem 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero__proposta {
+  font-size: 1.15rem;
+  color: var(--grafite);
+}
+
+.hero__meta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1.5rem;
+  margin: 2.5rem 0;
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--borda);
+  border-bottom: 1px solid var(--borda);
+}
+
+.hero__meta dt {
+  font-family: var(--fonte-titulo);
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 0.3rem;
+}
+
+.hero__meta dd {
+  margin: 0;
+  color: var(--grafite);
+  font-size: 0.95rem;
+}
+
+.hero__cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.botao {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  padding: 0.75rem 1.4rem;
+  border-radius: 0.5rem;
+  border: 1px solid transparent;
+}
+
+.botao--principal {
+  background: var(--tinta);
+  color: var(--papel);
+}
+
+.botao--principal:hover { opacity: 0.9; }
+
+.botao--fantasma {
+  border-color: var(--borda);
+  color: var(--tinta);
+}
+
+.botao--fantasma:hover { border-color: var(--tinta); }
+
+/* ------------------------------------------------------------
+   BLOCO 2 · FUNCIONALIDADES — branch feat/funcionalidades — Daniel
+   ------------------------------------------------------------ */
+
+.secao__intro {
+  color: var(--grafite);
+}
+
+.funcionalidades__lista {
+  list-style: none;
+  margin: 2.5rem 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1.5rem;
+}
+
+.funcionalidades__item {
+  background: var(--papel-2);
+  border: 1px solid var(--borda);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+}
+
+.funcionalidades__icone {
+  display: inline-block;
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.funcionalidades__item h3 { margin-bottom: 0.4rem; }
+
+.funcionalidades__item p {
+  margin: 0;
+  color: var(--grafite);
+  font-size: 0.95rem;
+}
+
+
+
+/* ------------------------------------------------------------
+   BLOCO 3 · EQUIPE — branch feat/quem-somos — Lucas
+   ------------------------------------------------------------ */
+
+
+
+/* ------------------------------------------------------------
+   BLOCO 4 · CONTATO — branch feat/contato — Lucas
+   ------------------------------------------------------------ */
