@@ -119,12 +119,28 @@
          DONO: Lucas
          Conteúdo pedido: card por integrante com nome, foto/avatar,
          link do GitHub e cargo.
-         Dica de avatar sem precisar subir imagem:
-         https://github.com/USUARIO.png
     =========================================================== -->
     <section id="equipe" class="secao secao--equipe">
 
-      <!-- TODO Lucas: escrever o mural da equipe aqui -->
+      <h2>Quem construiu o Radar Estágio</h2>
+      <p class="secao__intro">
+        Time de dois, dividindo o projeto ponta a ponta — do conteúdo ao código.
+      </p>
+
+      <ul class="equipe__lista">
+        <li class="equipe__card">
+          <img class="equipe__avatar" src="https://github.com/Dev-daniel-01.png" alt="Foto de perfil de Daniel Ribeiro da Costa no GitHub" width="88" height="88" loading="lazy">
+          <h3>Daniel Ribeiro da Costa</h3>
+          <p class="equipe__cargo">Desenvolvedor · Líder de Equipe</p>
+          <a class="equipe__link" href="https://github.com/Dev-daniel-01" target="_blank" rel="noopener">github.com/Dev-daniel-01</a>
+        </li>
+        <li class="equipe__card">
+          <img class="equipe__avatar" src="https://github.com/Lucasmkze.png" alt="Foto de perfil de Lucas Markovicz Costa no GitHub" width="88" height="88" loading="lazy">
+          <h3>Lucas Markovicz Costa</h3>
+          <p class="equipe__cargo">Desenvolvedor</p>
+          <a class="equipe__link" href="https://github.com/Lucasmkze" target="_blank" rel="noopener">github.com/Lucasmkze</a>
+        </li>
+      </ul>
 
     </section>
 
@@ -138,7 +154,46 @@
     =========================================================== -->
     <section id="contato" class="secao secao--contato">
 
-      <!-- TODO Lucas: escrever o CTA e contato aqui -->
+      <h2>Testa, contribui ou entra em contato</h2>
+      <p class="secao__intro">
+        Projeto acadêmico de ponta a ponta — código aberto, protótipo navegável
+        e um jeito de mandar feedback pra equipe.
+      </p>
+
+      <div class="contato__grid">
+        <div class="contato__links">
+          <h3>Links</h3>
+          <ul class="contato__lista-links">
+            <li><a href="index.html">🔗 Testar o protótipo</a></li>
+            <li><a href="https://github.com/Dev-daniel-01/projeto-equipe-grupo-DesignProfissional-Daniel-Lucas" target="_blank" rel="noopener">💻 Repositório no GitHub</a></li>
+            <li><a href="https://dev-daniel-01.github.io/projeto-equipe-grupo-DesignProfissional-Daniel-Lucas/" target="_blank" rel="noopener">🚀 Site publicado (GitHub Pages)</a></li>
+          </ul>
+
+          <h3>Tecnologias utilizadas</h3>
+          <ul class="contato__tecnologias">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>Git</li>
+            <li>GitHub Pages</li>
+          </ul>
+        </div>
+
+        <form class="contato__form" onsubmit="return false">
+          <h3>Fale com a equipe</h3>
+          <p class="contato__aviso">Formulário de demonstração — não envia dados de verdade.</p>
+
+          <label for="nome">Nome</label>
+          <input id="nome" name="nome" type="text" placeholder="Seu nome">
+
+          <label for="email">E-mail</label>
+          <input id="email" name="email" type="email" placeholder="seu@email.com">
+
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="4" placeholder="O que você achou do Radar Estágio?"></textarea>
+
+          <button class="botao botao--principal" type="submit">Enviar</button>
+        </form>
+      </div>
 
     </section>
 
