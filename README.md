@@ -7,10 +7,10 @@ Projeto desenvolvido para a disciplina de Engenharia de Software da Universidade
 Equipe
 Nome completo	GitHub	Seções produzidas
 Daniel Ribeiro da Costa	@Dev-daniel-01	Hero · Funcionalidades
-Lucas (nome completo)	@usuario-do-lucas	Quem somos · Contato
+Lucas Markovicz Costa	@Lucasmkze	Quem somos · Contato
 Site publicado
 
-https://dev-daniel-01.github.io/projeto-equipe-grupo-X/
+https://dev-daniel-01.github.io/projeto-equipe-grupo-DesignProfissional-Daniel-Lucas/
 
 Fluxo de trabalho
 
@@ -22,13 +22,13 @@ main  ← versão entregue
       └── lucas
 Branch	Responsável	Entrega
 daniel	Daniel Ribeiro da Costa	Hero (título, proposta de valor, público-alvo, problema) e Funcionalidades
-lucas	Lucas	Quem somos (cards da equipe) e Contato (CTA, formulário, tecnologias)
+lucas	Lucas Markovicz Costa	Quem somos (cards da equipe) e Contato (CTA, formulário, tecnologias)
 dev	Ambos	Integração das seções antes de ir para a main
 
 Cada integrante edita apenas o seu bloco em index.html e em style.css. Os blocos estão delimitados por comentários no código.
 
 Estrutura de arquivos
-projeto-equipe-grupo-X/
+projeto-equipe-grupo-DesignProfissional-Daniel-Lucas/
 ├── index.html    seções delimitadas por comentários de bloco
 ├── style.css     base compartilhada + um bloco por integrante
 └── README.md

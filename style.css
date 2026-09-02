@@ -249,14 +249,127 @@ button:focus-visible {
   font-size: 0.95rem;
 }
 
-
-
 /* ------------------------------------------------------------
    BLOCO 3 · EQUIPE — branch feat/quem-somos — Lucas
    ------------------------------------------------------------ */
 
+.equipe__lista {
+  list-style: none;
+  margin: 2.5rem 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 1.5rem;
+}
 
+.equipe__card {
+  background: var(--papel-2);
+  border: 1px solid var(--borda);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.equipe__avatar {
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.equipe__cargo {
+  color: var(--grafite);
+  font-size: 0.9rem;
+  margin: 0 0 0.75rem;
+}
+
+.equipe__link {
+  font-size: 0.9rem;
+  text-decoration: none;
+  border-bottom: 1px solid var(--borda);
+}
+
+.equipe__link:hover { border-bottom-color: var(--tinta); }
 
 /* ------------------------------------------------------------
    BLOCO 4 · CONTATO — branch feat/contato — Lucas
    ------------------------------------------------------------ */
+
+.contato__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  margin-top: 2.5rem;
+}
+
+@media (max-width: 40rem) {
+  .contato__grid { grid-template-columns: 1fr; }
+}
+
+.contato__lista-links,
+.contato__tecnologias {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem;
+}
+
+.contato__lista-links li { margin-bottom: 0.6rem; }
+
+.contato__lista-links a {
+  text-decoration: none;
+  border-bottom: 1px solid var(--borda);
+}
+
+.contato__lista-links a:hover { border-bottom-color: var(--tinta); }
+
+.contato__tecnologias {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.contato__tecnologias li {
+  background: var(--papel-2);
+  border: 1px solid var(--borda);
+  border-radius: 999px;
+  padding: 0.3rem 0.8rem;
+  font-size: 0.85rem;
+  color: var(--grafite);
+}
+
+.contato__form {
+  background: var(--papel-2);
+  border: 1px solid var(--borda);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.contato__aviso {
+  color: var(--grafite);
+  font-size: 0.85rem;
+  margin: 0 0 1rem;
+}
+
+.contato__form label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-top: 0.6rem;
+}
+
+.contato__form input,
+.contato__form textarea {
+  font-family: var(--fonte-texto);
+  font-size: 0.95rem;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid var(--borda);
+  border-radius: 0.4rem;
+  background: var(--papel);
+  color: var(--tinta);
+}
+
+.contato__form button {
+  margin-top: 1rem;
+  align-self: flex-start;
+  cursor: pointer;
+}
