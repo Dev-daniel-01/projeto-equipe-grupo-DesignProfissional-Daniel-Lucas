@@ -7,7 +7,7 @@ Projeto desenvolvido para a disciplina de Engenharia de Software da Universidade
 Equipe
 Nome completo	GitHub	Seções produzidas
 Daniel Ribeiro da Costa	@Dev-daniel-01	Hero · Funcionalidades
-Lucas Markovicz Costa	@Lucasmkze	Quem somos · Contato
+Lucas Markovicz Costa	@Lucasmkz	Quem somos · Contato
 Site publicado
 
 https://dev-daniel-01.github.io/projeto-equipe-grupo-DesignProfissional-Daniel-Lucas/
