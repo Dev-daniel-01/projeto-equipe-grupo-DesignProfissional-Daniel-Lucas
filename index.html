@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Radar Estágio — vagas de TI que aceitam quem tá começando</title>
+  <meta name="description" content="Agregador de vagas de estágio e júnior em tecnologia na região de Curitiba.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Public+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topo">
+    <a class="marca" href="#hero">
+      <span class="marca__ping" aria-hidden="true"></span>
+      Radar Estágio
+    </a>
+    <nav class="nav" aria-label="Seções da página">
+      <a href="#funcionalidades">O que faz</a>
+      <a href="#equipe">Quem fez</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ==========================================================
+         BLOCO 1 · HERO E APRESENTAÇÃO
+         BRANCH: feat/hero
+         DONO: Daniel
+         Conteúdo pedido: título da solução, proposta de valor,
+         público-alvo e problema que resolve.
+         >>> Ninguém edita fora do próprio bloco. <<<
+    =========================================================== -->
+    <section id="hero" class="secao secao--hero">
+
+      <span class="etiqueta">
+        <span class="marca__ping" aria-hidden="true"></span>
+        Vagas atualizadas toda semana
+      </span>
+
+      <h1>Vaga de estágio em TI que não pede 3 anos de experiência pra quem tá começando.</h1>
+
+      <p class="hero__proposta">
+        O Radar Estágio reúne, num só lugar, vagas de estágio e júnior em tecnologia na
+        região de Curitiba — filtradas pela senioridade real que o texto da vaga pede,
+        não pelo cargo bonito que ela promete.
+      </p>
+
+      <dl class="hero__meta">
+        <div>
+          <dt>Pra quem é</dt>
+          <dd>Estudantes de tecnologia, do 1º ao último período, sem experiência formal.</dd>
+        </div>
+        <div>
+          <dt>Problema que resolve</dt>
+          <dd>Vaga "júnior" espalhada em dezenas de sites e grupos de WhatsApp — e a maioria pedindo experiência que quem tá começando não tem.</dd>
+        </div>
+      </dl>
+
+      <div class="hero__cta">
+        <a class="botao botao--principal" href="#funcionalidades">Ver como funciona</a>
+        <a class="botao botao--fantasma" href="#contato">Testar o protótipo</a>
+      </div>
+
+    </section>
+
+
+    <!-- ==========================================================
+         BLOCO 2 · FUNCIONALIDADES PRINCIPAIS
+         BRANCH: feat/funcionalidades
+         DONO: Daniel
+         Conteúdo pedido: 3 a 5 recursos com breve descrição e ícone/emoji.
+    =========================================================== -->
+    <section id="funcionalidades" class="secao secao--funcionalidades">
+
+      <h2>O que o Radar Estágio faz</h2>
+      <p class="secao__intro">
+        Cinco recursos pensados pra quem tá cansado de abrir dez abas pra achar
+        uma vaga que realmente aceita quem tá começando.
+      </p>
+
+      <ul class="funcionalidades__lista">
+        <li class="funcionalidades__item">
+          <span class="funcionalidades__icone" aria-hidden="true">🎯</span>
+          <h3>Filtro por senioridade real</h3>
+          <p>Cruza o texto da vaga com os requisitos pedidos e esconde as que dizem "júnior" mas cobram anos de experiência.</p>
+        </li>
+        <li class="funcionalidades__item">
+          <span class="funcionalidades__icone" aria-hidden="true">🔔</span>
+          <h3>Alerta de vaga nova</h3>
+          <p>Notificação assim que abre uma vaga compatível com o teu perfil, sem precisar ficar recarregando site.</p>
+        </li>
+        <li class="funcionalidades__item">
+          <span class="funcionalidades__icone" aria-hidden="true">✅</span>
+          <h3>Checklist de perfil</h3>
+          <p>Confere se o teu GitHub, LinkedIn e portfólio estão prontos antes de te deixar candidatar.</p>
+        </li>
+        <li class="funcionalidades__item">
+          <span class="funcionalidades__icone" aria-hidden="true">📌</span>
+          <h3>Controle de candidaturas</h3>
+          <p>Marca "já me candidatei" e guarda um histórico — nada de perder a conta de onde já mandou currículo.</p>
+        </li>
+        <li class="funcionalidades__item">
+          <span class="funcionalidades__icone" aria-hidden="true">🏆</span>
+          <h3>Ranking de empresas que respondem</h3>
+          <p>Mostra quais empresas de fato dão retorno pros candidatos, pra você não gastar tempo em vaga que nunca responde.</p>
+        </li>
+      </ul>
+
+    </section>
+
+
+    <!-- ==========================================================
+         BLOCO 3 · QUEM SOMOS (MURAL DA EQUIPE)
+         BRANCH: feat/quem-somos
+         DONO: Lucas
+         Conteúdo pedido: card por integrante com nome, foto/avatar,
+         link do GitHub e cargo.
+    =========================================================== -->
+    <section id="equipe" class="secao secao--equipe">
+
+      <h2>Quem construiu o Radar Estágio</h2>
+      <p class="secao__intro">
+        Time de dois, dividindo o projeto ponta a ponta — do conteúdo ao código.
+      </p>
+
+      <ul class="equipe__lista">
+        <li class="equipe__card">
+          <img class="equipe__avatar" src="https://github.com/Dev-daniel-01.png" alt="Foto de perfil de Daniel Ribeiro da Costa no GitHub" width="88" height="88" loading="lazy">
+          <h3>Daniel Ribeiro da Costa</h3>
+          <p class="equipe__cargo">Desenvolvedor · Líder de Equipe</p>
+          <a class="equipe__link" href="https://github.com/Dev-daniel-01" target="_blank" rel="noopener">github.com/Dev-daniel-01</a>
+        </li>
+        <li class="equipe__card">
+          <img class="equipe__avatar" src="https://github.com/Lucasmkze.png" alt="Foto de perfil de Lucas Markovicz Costa no GitHub" width="88" height="88" loading="lazy">
+          <h3>Lucas Markovicz Costa</h3>
+          <p class="equipe__cargo">Desenvolvedor</p>
+          <a class="equipe__link" href="https://github.com/Lucasmkze" target="_blank" rel="noopener">github.com/Lucasmkze</a>
+        </li>
+      </ul>
+
+    </section>
+
+
+    <!-- ==========================================================
+         BLOCO 4 · CALL TO ACTION E CONTATO
+         BRANCH: feat/contato
+         DONO: Lucas
+         Conteúdo pedido: links de teste, link do repositório,
+         formulário fictício e tecnologias utilizadas.
+    =========================================================== -->
+    <section id="contato" class="secao secao--contato">
+
+      <h2>Testa, contribui ou entra em contato</h2>
+      <p class="secao__intro">
+        Projeto acadêmico de ponta a ponta — código aberto, protótipo navegável
+        e um jeito de mandar feedback pra equipe.
+      </p>
+
+      <div class="contato__grid">
+        <div class="contato__links">
+          <h3>Links</h3>
+          <ul class="contato__lista-links">
+            <li><a href="index.html">🔗 Testar o protótipo</a></li>
+            <li><a href="https://github.com/Dev-daniel-01/projeto-equipe-grupo-DesignProfissional-Daniel-Lucas" target="_blank" rel="noopener">💻 Repositório no GitHub</a></li>
+            <li><a href="https://dev-daniel-01.github.io/projeto-equipe-grupo-DesignProfissional-Daniel-Lucas/" target="_blank" rel="noopener">🚀 Site publicado (GitHub Pages)</a></li>
+          </ul>
+
+          <h3>Tecnologias utilizadas</h3>
+          <ul class="contato__tecnologias">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>Git</li>
+            <li>GitHub Pages</li>
+          </ul>
+        </div>
+
+        <form class="contato__form" onsubmit="return false">
+          <h3>Fale com a equipe</h3>
+          <p class="contato__aviso">Formulário de demonstração — não envia dados de verdade.</p>
+
+          <label for="nome">Nome</label>
+          <input id="nome" name="nome" type="text" placeholder="Seu nome">
+
+          <label for="email">E-mail</label>
+          <input id="email" name="email" type="email" placeholder="seu@email.com">
+
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="4" placeholder="O que você achou do Radar Estágio?"></textarea>
+
+          <button class="botao botao--principal" type="submit">Enviar</button>
+        </form>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <p>Projeto acadêmico — Universidade Positivo</p>
+  </footer>
+
+</body>
+</html>
